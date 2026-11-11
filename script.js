@@ -40,15 +40,15 @@
     ['obra-01'], ['render-01', 'Render de cocina, comedor y sala'],
     ['obra-18', 'Estación total en un terreno con pasto'],
     ['render-04', 'Render de dormitorio con ventanal'], ['obra-08'],
-    ['render-08', 'Render de cocina con ventana al jardín'], ['obra-10'],
+    ['render-08', 'Render de cocina con ventana al jardín'],
     ['render-03', 'Render de fachada frontal desde la vía'],
     ['obra-27', 'Equipo realizando un estudio de suelos en un terreno'],
-    ['render-05', 'Render de dormitorio master con closet'], ['obra-05'],
+    ['render-05', 'Render de dormitorio master con closet'],
     ['render-09', 'Render de comedor y cocina con isla'], ['obra-26', 'Vivienda en obra gris con escalera exterior'],
     ['render-06', 'Render de dormitorio con closet y baño'], ['obra-11'],
-    ['render-10', 'Render de sala y comedor con chimenea'], ['obra-19', 'Controlador Trimble con coordenadas de levantamiento'],
-    ['obra-15'], ['obra-20', 'Antena GPS topográfica junto a una vivienda'], ['obra-21'], ['obra-02'],
-    ['obra-23'], ['obra-06'], ['obra-22'], ['obra-24'], ['obra-25']
+    ['render-10', 'Render de sala y comedor con chimenea'],
+    ['obra-20', 'Antena GPS topográfica junto a una vivienda'], ['obra-21'],
+    ['obra-23'], ['obra-22'], ['obra-24']
   ];
   const track = document.getElementById('ribbon');
   const imgs = gallery.map(([f, alt]) =>

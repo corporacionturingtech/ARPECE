@@ -24,7 +24,7 @@ index.html     página única (hero, cifras, servicios, nosotros, trabajo, conta
 styles.css     tokens en :root (paleta ink/paper/accent amarillo), responsive a 900 y 720 px
 script.js      hero con diapositivas, cinta de fotos, menú móvil, formulario → WhatsApp
 assets/logo/   horizontal/vertical, versión dark y light (PNG transparente)
-assets/photos/ obra-01..28.jpg y render-01..10.jpg (1600 px máx.)
+assets/photos/ obra-NN.jpg (01..28, sin 02, 05, 06, 10, 15, 19, 25: retiradas a pedido) y render-01..10.jpg (1600 px máx.)
 assets/partners/ logos de proveedores (originales, a color)
 img/, Renders/, Renders.zip  material original del cliente (HEIC, PNG, ZIP, .ai, manual de marca). No publicar.
 *.docx, *.vtt  documento de observaciones y transcripciones de reuniones. No publicar.
