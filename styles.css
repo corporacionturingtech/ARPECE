@@ -108,22 +108,39 @@ h1,h2,h3,h4{font-family:var(--f-head);line-height:1.05;text-transform:uppercase;
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-bottom:40px}
 .info{list-style:none;padding:0;margin:8px 0 24px}
 .info li{padding:12px 0;border-bottom:1px solid var(--line)}
-.info b{display:block;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-d)}
-.info a{text-decoration:none;font-weight:500}.info a:hover{text-decoration:underline}
+.info b{display:block;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+.info a,.info__item{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:500}
+.info a:hover span{text-decoration:underline}
+.info__row{display:flex;flex-wrap:wrap;gap:12px 36px}
+.ico{width:22px;height:22px;flex:none;color:var(--ink)}
+.info .ico{width:38px;height:38px;padding:9px;border-radius:50%;background:var(--ink);color:#fff}
+.social__title{font-size:22px;margin-bottom:12px}
 .social{display:flex;gap:10px;flex-wrap:wrap}
-.social a{border:2px solid var(--ink);padding:8px 16px;text-decoration:none;font-weight:600;border-radius:var(--r);font-size:15px}
-.social a:hover{background:var(--ink);color:var(--accent)}
+.social a{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--ink);padding:8px 16px;text-decoration:none;font-weight:600;border-radius:var(--r);font-size:15px}
+.social a .ico{width:20px;height:20px;color:inherit}
+.social a:hover{background:var(--ink);color:#fff}
 .form{background:#fff;padding:32px;border-radius:var(--r);border:1px solid var(--line);display:grid;gap:16px;align-content:start}
 .form label{display:grid;gap:6px;font-weight:500;font-size:15px}
 .form input,.form select,.form textarea{font:inherit;padding:12px;border:1px solid #bdb5a7;border-radius:var(--r);background:var(--paper)}
 .form .is-bad{border-color:#b3261e}
 .hint{font-size:13px;color:var(--ink-2)}
-.map{width:100%;height:340px;border:0;border-radius:var(--r);filter:grayscale(.3)}
+
+/* proveedores */
+.partners{background:#fff;padding:48px 0 52px;border-top:1px solid var(--line)}
+.partners__title{font-size:clamp(26px,3vw,34px);text-align:center}
+.ribbon--logos{margin-top:24px}
+.ribbon--logos .ribbon__track{gap:20px;align-items:center;animation-duration:45s}
+.logo-tile{display:grid;place-items:center;height:84px;padding:0 18px;border:1px solid var(--line);border-radius:var(--r);background:#fff}
+.ribbon .logo-tile img{height:56px;width:auto;max-width:180px;object-fit:contain;border-radius:0}
 
 .footer{background:var(--ink);color:#cfc8ba;padding:34px 0}
-.footer__in{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.footer__in{display:flex;justify-content:space-between;align-items:center;gap:20px 32px;flex-wrap:wrap}
+.pay{display:flex;align-items:center;gap:8px 14px;flex-wrap:wrap;font-size:14px}
+.pay__list{display:flex;gap:8px;list-style:none;padding:0;flex-wrap:wrap}
+.pay__list li{width:54px;height:34px;border:1px solid #6b665e;border-radius:5px;display:grid;place-items:center;color:#e9e4da}
+.pay__list svg{width:100%;height:100%}
 .footer img{height:34px;width:auto}
-.fab{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;
+.fab{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:var(--ink);color:#fff;border:0;outline:3px solid rgba(255,255,255,.9);outline-offset:-3px;display:grid;place-items:center;
   box-shadow:0 6px 18px rgba(0,0,0,.3);z-index:60;transition:transform .2s}
 .fab:hover{transform:scale(1.08)}
 
@@ -148,10 +165,13 @@ h1,h2,h3,h4{font-family:var(--f-head);line-height:1.05;text-transform:uppercase;
   .strip__in{grid-template-columns:1fr;gap:12px}
   .section{padding:60px 0}
   .ribbon img{height:240px}
+  .ribbon .logo-tile img{height:44px}
+  .logo-tile{height:68px}
   .hero{min-height:600px}
   .slide{padding-bottom:150px}
   .hero__cta{padding-bottom:70px}
   .mv{grid-template-columns:1fr}
+  .footer{padding-bottom:96px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}

@@ -3,13 +3,15 @@
 Sitio web de **ARPECE**, constructora de Sangolquí (Valle de los Chillos, Ecuador). Referencia de estructura y enfoque comercial: https://kuuconstrucciones.com/ (no copiar textos, imágenes ni marca).
 
 ## Datos de la empresa (fuente: cliente)
-- Horario: lunes a sábado, 6:30–17:30.
+- Dominio: `arpece.com.ec` (hosting en la nube de TuringTech, primer año sin costo). Correo: `proyectos@arpece.com.ec` (Microsoft 365).
+- Horario: lunes a sábado, 7:00–18:00 (igual que Google Maps).
 - WhatsApp: 096 212 2527 (`wa.me/593962122527`; enlace de mensaje del cliente: `https://wa.me/message/VZOIP73RYRZDF1`).
 - Llamadas: 099 876 4825.
-- Dirección: Santa Cecilia y Av. Huancavilca E6-166, Sangolquí, Ecuador (según manual de marca). Correo: peraltapbyron@outlook.com.
-- Redes: Facebook (`share/1CoWmhoZ7F`), Instagram `arpece` (según manual @ARPECE), LinkedIn `company/arpece`.
-- Desde 2020, 46 proyectos ejecutados en el Valle de los Chillos y alrededores. Se aceptan todas las tarjetas de crédito.
-- Precios (USD, "desde"): obra gris hormigón armado 240/m², estructura metálica 270/m²; terminada Standard 390, Comfort 460, Premium 590 /m²; cerramiento 90/ml, pérgola 90/m², cubierta teja española 70/m².
+- Dirección: Quito y Montúfar, Sangolquí (oficina). En el sitio va como enlace a Maps: `https://maps.app.goo.gl/pGfe6GymzEua669h6`. No usar la dirección del manual de marca (Santa Cecilia y Huancavilca): el cliente la corrigió.
+- Redes: Facebook (`share/1CoWmhoZ7F`), Instagram `_arpece`, LinkedIn `company/arpece`.
+- Cifras de la franja: "Brindando soluciones desde 2020", "+46 proyectos ejecutados" (sin mencionar el Valle), "Alcance hacia las 4 regiones del Ecuador".
+- Pagos: tarjetas con Datafast; solo se mencionan una vez, en el pie, con logos de tarjetas en escala de grises.
+- Precios (USD, "desde", según documento de observaciones de nov. 2026): obra gris hormigón armado 230/m², estructura metálica 260/m²; terminada Standard 390, Comfort 460, Premium 590 /m²; cerramiento 80/ml, pérgola 70/m², cubierta teja española 60/m². El 230 también aparece en el hero ("Construye tu casa") y en las meta descripciones.
 - Misión: vincular a las personas al sueño de habitar un lugar propio. Visión: ser líder en la transformación constructiva y gestión del territorio.
 
 Nunca inventar cifras, proyectos, testimonios ni precios. Cualquier dato nuevo debe venir del cliente.
@@ -22,8 +24,10 @@ index.html     página única (hero, cifras, servicios, nosotros, trabajo, conta
 styles.css     tokens en :root (paleta ink/paper/accent amarillo), responsive a 900 y 720 px
 script.js      hero con diapositivas, cinta de fotos, menú móvil, formulario → WhatsApp
 assets/logo/   horizontal/vertical, versión dark y light (PNG transparente)
-assets/photos/ obra-01..25.jpg (1600 px máx.)
-img/           material original del cliente (HEIC, ZIP, .ai, manual de marca). No publicar.
+assets/photos/ obra-01..28.jpg y render-01..10.jpg (1600 px máx.)
+assets/partners/ logos de proveedores (originales, a color)
+img/, Renders/, Renders.zip  material original del cliente (HEIC, PNG, ZIP, .ai, manual de marca). No publicar.
+*.docx, *.vtt  documento de observaciones y transcripciones de reuniones. No publicar.
 .claude/launch.json   servidor de preview: python -m http.server 8080
 ```
 
@@ -34,14 +38,14 @@ img/           material original del cliente (HEIC, ZIP, .ai, manual de marca). 
 - Las fotos nuevas: convertir HEIC a JPG (Python con `pillow` y `pillow-heif`), máx. 1600 px, calidad ~82, y añadir `alt` en `script.js` si no es una foto genérica de obra.
 - Accesibilidad: contraste AA, `alt`, foco visible, `prefers-reduced-motion` respetado.
 - Un CTA primario por sección (WhatsApp). El formulario no tiene backend: arma un mensaje y abre WhatsApp.
+- Íconos monocromos (sprite SVG al inicio de `index.html`); el botón flotante de WhatsApp va en gris oscuro, no en verde. Los logos de proveedores sí van a color.
+- La cinta de `script.js` (`gallery`) no debe repetir las fotos del hero ni la de "Quiénes somos".
 
 ## Pendiente / por confirmar con el cliente
-- Manual de marca (`img/logo web/Manual de marca ARPECE.pdf`, 2026): paleta oficial negro `#333333` y blanco (el sitio ya usa `#333333`; el amarillo `#f2b705` de acento NO está en el manual, confirmar). Tipografías oficiales: Neusharp (títulos) y Nexa (texto), de pago y fuera de Google Fonts; se mantiene Barlow hasta tener licencia o archivos web.
-- Aplicados desde el manual (confirmar con el cliente): dirección, correo y handle de Instagram `arpece` (antes `_arpece`; verificar que el enlace abra la cuenta correcta). Director: arq. Byron Peralta (no publicado).
-- Renders y obras terminadas: las 25 fotos actuales son de obra en proceso y topografía.
-- Testimonios, equipo y preguntas frecuentes (no entregados; no se incluyen).
-- Dominio, hosting y correo de contacto.
-- Mapa: se incrusta por texto de dirección; confirmar el pin exacto.
+- Paleta y tipografía aprobadas por el cliente en la reunión del 10/11/2026. El manual pide Neusharp y Nexa (de pago); se mantiene Barlow hasta tener los archivos web. El amarillo `#f2b705` no está en el manual pero no se objetó.
+- Proveedores: hay más marcas sin tachar en las hojas escaneadas del documento (Acesco, Adelca, Holcim, Sika, UCEM, etc.); faltan sus logos en buena resolución. El de Wavin es pequeño (39 px de alto).
+- Byron puede enviar más fotos de obra y renders; evitar repetirlas en portada y cinta.
+- Tercera y última reunión de ajustes; entregar con dominio y correo configurados.
 
 ## Preview
 `mcp preview_start` con la config "web", o `python -m http.server 8080` en esta carpeta.

@@ -33,18 +33,37 @@
   }
   go(0); start();
 
-  // Cinta de obras (se duplica para el bucle continuo)
-  const alts = {
-    16: 'Estación total sobre trípode en terreno', 17: 'Estación total sobre trípode con vista al valle',
-    18: 'Estación total en un terreno con pasto', 19: 'Controlador Trimble con coordenadas de levantamiento',
-    20: 'Antena GPS topográfica junto a una vivienda'
-  };
+  // Cinta de renders y obras (se duplica para el bucle continuo).
+  // No repetir aquí las fotos del hero (render-07, obra-12, obra-13, obra-28, obra-03) ni la de "Quiénes somos" (obra-17).
+  const gallery = [
+    ['render-02', 'Render de fachada frontal de vivienda de tres pisos'],
+    ['obra-01'], ['render-01', 'Render de cocina, comedor y sala'],
+    ['obra-18', 'Estación total en un terreno con pasto'],
+    ['render-04', 'Render de dormitorio con ventanal'], ['obra-08'],
+    ['render-08', 'Render de cocina con ventana al jardín'], ['obra-10'],
+    ['render-03', 'Render de fachada frontal desde la vía'],
+    ['obra-27', 'Equipo realizando un estudio de suelos en un terreno'],
+    ['render-05', 'Render de dormitorio master con closet'], ['obra-05'],
+    ['render-09', 'Render de comedor y cocina con isla'], ['obra-26', 'Vivienda en obra gris con escalera exterior'],
+    ['render-06', 'Render de dormitorio con closet y baño'], ['obra-11'],
+    ['render-10', 'Render de sala y comedor con chimenea'], ['obra-19', 'Controlador Trimble con coordenadas de levantamiento'],
+    ['obra-15'], ['obra-20', 'Antena GPS topográfica junto a una vivienda'], ['obra-21'], ['obra-02'],
+    ['obra-23'], ['obra-06'], ['obra-22'], ['obra-24'], ['obra-25']
+  ];
   const track = document.getElementById('ribbon');
-  const imgs = Array.from({ length: 25 }, (_, i) => {
-    const n = String(i + 1).padStart(2, '0');
-    return `<img src="assets/photos/obra-${n}.jpg" alt="${alts[i + 1] || 'Obra de ARPECE en ejecución'}" loading="lazy" height="340">`;
-  }).join('');
+  const imgs = gallery.map(([f, alt]) =>
+    `<img src="assets/photos/${f}.jpg" alt="${alt || 'Obra de ARPECE en ejecución'}" loading="lazy" height="340">`).join('');
   track.innerHTML = imgs + imgs;
+
+  // Cinta de proveedores (logos originales)
+  const partners = [
+    ['novopan', 'Novopan'], ['novacero', 'Novacero'], ['selvalegre', 'Cemento Selvalegre'], ['conservelco', 'Conservelco'],
+    ['intaco', 'Intaco'], ['ecuaceramica', 'Ecuacerámica'], ['sherwin-williams', 'Sherwin-Williams'], ['wavin', 'Wavin'],
+    ['fv', 'FV Área Andina'], ['electrocables', 'Electrocables'], ['graiman', 'Graiman'], ['veto', 'Veto'], ['schneider', 'Schneider Electric']
+  ];
+  const logos = partners.map(([f, name]) =>
+    `<span class="logo-tile"><img src="assets/partners/${f}.png" alt="${name}" loading="lazy" height="56"></span>`).join('');
+  document.getElementById('partners').innerHTML = logos + logos;
 
   // Aparición al scroll
   const io = new IntersectionObserver(es => es.forEach(e => {
