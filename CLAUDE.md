@@ -10,7 +10,7 @@ Sitio web de **ARPECE**, constructora de Sangolquí (Valle de los Chillos, Ecuad
 - Dirección: Quito y Montúfar, Sangolquí (oficina). En el sitio va como enlace a Maps: `https://maps.app.goo.gl/pGfe6GymzEua669h6`. No usar la dirección del manual de marca (Santa Cecilia y Huancavilca): el cliente la corrigió.
 - Redes: Facebook (`share/1CoWmhoZ7F`), Instagram `_arpece`, LinkedIn `company/arpece`.
 - Cifras de la franja (solo 2, según la reunión del 10/11/2026): "Brindando soluciones / desde 2020" y "+46 proyectos / ejecutados" (sin mencionar el Valle). En "Quiénes somos" las cifras van a la derecha: "Brindando soluciones desde 2020", "Proyectos ejecutados +46".
-- Pagos: tarjetas con Datafast; solo se mencionan una vez, en el pie, con logos de tarjetas en escala de grises.
+- Pagos: tarjetas con Datafast y pagos con Deuna; solo se mencionan una vez, en el pie, con insignias en escala de grises (Deuna, Datafast, Visa, Mastercard, Amex, Diners).
 - Precios (USD, "desde", según lo dicho por el cliente en la reunión del 10/11/2026, que prevalece sobre su documento de observaciones): obra gris hormigón armado 230/m², estructura metálica 260/m²; terminada Standard 390, Comfort 460, Premium 590 /m²; cerramiento 90/ml, pérgola 80/m², cubierta teja española 70/m². El 230 también aparece en el hero ("Construye tu casa") y en las meta descripciones.
 - Misión: vincular a las personas al sueño de habitar un lugar propio. Visión: ser líder en la transformación constructiva y gestión del territorio.
 
