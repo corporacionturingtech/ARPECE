@@ -45,7 +45,7 @@
     ['render-12', 'Render de sala, comedor y cocina abiertos']
   ];
   const works = [
-    ['obra-01'], ['obra-18', 'Estación total en un terreno con pasto'], ['obra-08'],
+    ['obra-09', 'Losa y columnas con vista al valle'], ['obra-18', 'Estación total en un terreno con pasto'], ['obra-08'],
     ['obra-27', 'Equipo realizando un estudio de suelos en un terreno'], ['obra-26', 'Vivienda en obra gris con escalera exterior'],
     ['obra-11'], ['obra-20', 'Antena GPS topográfica junto a una vivienda'], ['obra-21'], ['obra-23'], ['obra-22'], ['obra-24']
   ];
