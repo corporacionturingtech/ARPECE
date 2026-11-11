@@ -134,14 +134,14 @@ h1,h2,h3,h4{font-family:var(--f-head);line-height:1.05;text-transform:uppercase;
 .logo-tile{display:grid;place-items:center;height:84px;padding:0 18px;border:1px solid var(--line);border-radius:var(--r);background:#fff}
 .ribbon .logo-tile img{height:56px;width:auto;max-width:180px;object-fit:contain;border-radius:0}
 
-.footer{background:var(--ink);color:#cfc8ba;padding:34px 0}
-.footer__in{display:flex;justify-content:space-between;align-items:center;gap:20px 32px;flex-wrap:wrap}
-.pay{display:flex;align-items:center;gap:8px 14px;flex-wrap:wrap;font-size:14px}
-.pay__list{display:flex;gap:8px;list-style:none;padding:0;flex-wrap:wrap}
-.pay__list li{width:54px;height:34px;border:1px solid #6b665e;border-radius:5px;display:grid;place-items:center;color:#e9e4da}
+.footer{background:var(--ink);color:#cfc8ba;padding:16px 0;font-size:13px}
+.footer__in{display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap;padding-right:64px}
+.pay{display:flex;align-items:center;gap:10px}
+.pay__list{display:flex;gap:6px;list-style:none;padding:0;flex-wrap:wrap}
+.pay__list li{width:42px;height:26px;border:1px solid #6b665e;border-radius:4px;display:grid;place-items:center;color:#e9e4da}
 .pay__list svg{width:100%;height:100%}
 .pay__list .pay__card{background:#e9e4da;border-color:#e9e4da;color:var(--ink)}
-.footer img{height:34px;width:auto}
+.footer img{height:26px;width:auto}
 .fab{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#5c5c5c;color:#fff;border:0;display:grid;place-items:center;
   box-shadow:0 6px 18px rgba(0,0,0,.3);z-index:60;transition:transform .2s}
 .fab:hover{transform:scale(1.08)}
@@ -173,7 +173,9 @@ h1,h2,h3,h4{font-family:var(--f-head);line-height:1.05;text-transform:uppercase;
   .slide{padding-bottom:150px}
   .hero__cta{padding-bottom:70px}
   .mv{grid-template-columns:1fr}
-  .footer{padding-bottom:96px}
+  .footer{padding-bottom:88px}
+  .footer__in{padding-right:0;justify-content:center;text-align:center}
+  .pay{flex-wrap:wrap;justify-content:center}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
