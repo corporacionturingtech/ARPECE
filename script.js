@@ -35,21 +35,21 @@
 
   // Cinta de renders y obras (se duplica para el bucle continuo).
   // No repetir aquí las fotos del hero (render-07, obra-12, obra-13, obra-28, obra-03) ni la de "Quiénes somos" (obra-17).
-  const gallery = [
-    ['render-02', 'Render de fachada frontal de vivienda de tres pisos'],
-    ['obra-01'], ['render-01', 'Render de cocina, comedor y sala'],
-    ['obra-18', 'Estación total en un terreno con pasto'],
-    ['render-04', 'Render de dormitorio con ventanal'], ['obra-08'],
-    ['render-08', 'Render de cocina con ventana al jardín'],
-    ['render-03', 'Render de fachada frontal desde la vía'],
-    ['obra-27', 'Equipo realizando un estudio de suelos en un terreno'],
-    ['render-05', 'Render de dormitorio master con closet'],
-    ['render-09', 'Render de comedor y cocina con isla'], ['obra-26', 'Vivienda en obra gris con escalera exterior'],
-    ['render-06', 'Render de dormitorio con closet y baño'], ['obra-11'],
-    ['render-10', 'Render de sala y comedor con chimenea'],
-    ['obra-20', 'Antena GPS topográfica junto a una vivienda'], ['obra-21'],
-    ['obra-23'], ['obra-22'], ['obra-24']
+  // Alterna siempre render y obra (mismo número de cada uno para que el bucle no junte dos iguales).
+  const renders = [
+    ['render-02', 'Render de fachada frontal de vivienda de tres pisos'], ['render-01', 'Render de cocina, comedor y sala'],
+    ['render-04', 'Render de dormitorio con ventanal'], ['render-08', 'Render de cocina con ventana al jardín'],
+    ['render-03', 'Render de fachada frontal desde la vía'], ['render-05', 'Render de dormitorio master con closet'],
+    ['render-09', 'Render de comedor y cocina con isla'], ['render-11', 'Render de fachada con vista lateral'],
+    ['render-06', 'Render de dormitorio con closet y baño'], ['render-10', 'Render de sala y comedor con chimenea'],
+    ['render-12', 'Render de sala, comedor y cocina abiertos']
   ];
+  const works = [
+    ['obra-01'], ['obra-18', 'Estación total en un terreno con pasto'], ['obra-08'],
+    ['obra-27', 'Equipo realizando un estudio de suelos en un terreno'], ['obra-26', 'Vivienda en obra gris con escalera exterior'],
+    ['obra-11'], ['obra-20', 'Antena GPS topográfica junto a una vivienda'], ['obra-21'], ['obra-23'], ['obra-22'], ['obra-24']
+  ];
+  const gallery = renders.flatMap((r, i) => [r, works[i]]).filter(Boolean);
   const track = document.getElementById('ribbon');
   const imgs = gallery.map(([f, alt]) =>
     `<img src="assets/photos/${f}.jpg" alt="${alt || 'Obra de ARPECE en ejecución'}" loading="lazy" height="340">`).join('');
