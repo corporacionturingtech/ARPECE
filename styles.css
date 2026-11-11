@@ -60,7 +60,7 @@ h1,h2,h3,h4{font-family:var(--f-head);line-height:1.05;text-transform:uppercase;
 
 /* strip */
 .strip{background:var(--accent)}
-.strip__in{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-block:22px;text-align:center}
+.strip__in{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;padding-block:22px;text-align:center}
 .strip strong{display:block;font:700 28px var(--f-head);text-transform:uppercase}
 .strip p{line-height:1.3;font-size:15px}
 

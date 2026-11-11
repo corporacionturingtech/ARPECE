@@ -9,9 +9,9 @@ Sitio web de **ARPECE**, constructora de Sangolquí (Valle de los Chillos, Ecuad
 - Llamadas: 099 876 4825.
 - Dirección: Quito y Montúfar, Sangolquí (oficina). En el sitio va como enlace a Maps: `https://maps.app.goo.gl/pGfe6GymzEua669h6`. No usar la dirección del manual de marca (Santa Cecilia y Huancavilca): el cliente la corrigió.
 - Redes: Facebook (`share/1CoWmhoZ7F`), Instagram `_arpece`, LinkedIn `company/arpece`.
-- Cifras de la franja: "Brindando soluciones desde 2020", "+46 proyectos ejecutados" (sin mencionar el Valle), "Alcance hacia las 4 regiones del Ecuador".
+- Cifras de la franja (solo 2, según la reunión del 10/11/2026): "Brindando soluciones / desde 2020" y "+46 proyectos / ejecutados" (sin mencionar el Valle). En "Quiénes somos" las cifras van a la derecha: "Brindando soluciones desde 2020", "Proyectos ejecutados +46".
 - Pagos: tarjetas con Datafast; solo se mencionan una vez, en el pie, con logos de tarjetas en escala de grises.
-- Precios (USD, "desde", según documento de observaciones de nov. 2026): obra gris hormigón armado 230/m², estructura metálica 260/m²; terminada Standard 390, Comfort 460, Premium 590 /m²; cerramiento 80/ml, pérgola 70/m², cubierta teja española 60/m². El 230 también aparece en el hero ("Construye tu casa") y en las meta descripciones.
+- Precios (USD, "desde", según lo dicho por el cliente en la reunión del 10/11/2026, que prevalece sobre su documento de observaciones): obra gris hormigón armado 230/m², estructura metálica 260/m²; terminada Standard 390, Comfort 460, Premium 590 /m²; cerramiento 90/ml, pérgola 80/m², cubierta teja española 70/m². El 230 también aparece en el hero ("Construye tu casa") y en las meta descripciones.
 - Misión: vincular a las personas al sueño de habitar un lugar propio. Visión: ser líder en la transformación constructiva y gestión del territorio.
 
 Nunca inventar cifras, proyectos, testimonios ni precios. Cualquier dato nuevo debe venir del cliente.
@@ -46,6 +46,7 @@ img/, Renders/, Renders.zip  material original del cliente (HEIC, PNG, ZIP, .ai,
 - Proveedores: hay más marcas sin tachar en las hojas escaneadas del documento (Acesco, Adelca, Holcim, Sika, UCEM, etc.); faltan sus logos en buena resolución. El de Wavin es pequeño (39 px de alto).
 - Byron puede enviar más fotos de obra y renders; evitar repetirlas en portada y cinta.
 - Tercera y última reunión de ajustes; entregar con dominio y correo configurados.
+- Confirmar con el cliente: el documento de observaciones pedía cerramiento 80, pérgola 70, teja 60 y una cifra "Alcance hacia las 4 regiones del Ecuador"; en la reunión dijo otra cosa y se aplicó lo de la reunión.
 
 ## Preview
 `mcp preview_start` con la config "web", o `python -m http.server 8080` en esta carpeta.
