@@ -7,7 +7,7 @@ Sitio web de **ARPECE**, constructora de Sangolquí (Valle de los Chillos, Ecuad
 - Horario: lunes a sábado, 7:00–18:00 (igual que Google Maps).
 - WhatsApp: 096 212 2527 (`wa.me/593962122527`; enlace de mensaje del cliente: `https://wa.me/message/VZOIP73RYRZDF1`).
 - Llamadas: 099 876 4825.
-- Dirección: Quito y Montúfar, Sangolquí (oficina). En el sitio va como enlace a Maps: `https://maps.app.goo.gl/pGfe6GymzEua669h6`. No usar la dirección del manual de marca (Santa Cecilia y Huancavilca): el cliente la corrigió.
+- Dirección: Quito y Montúfar, Sangolquí (oficina). En el sitio va como enlace a Maps: `https://maps.app.goo.gl/Di24rEkrdVPR2DYb6`. No usar la dirección del manual de marca (Santa Cecilia y Huancavilca): el cliente la corrigió.
 - Redes: Facebook (`share/1CoWmhoZ7F`), Instagram `_arpece`, LinkedIn `company/arpece`.
 - Cifras de la franja: "Brindando soluciones / desde 2020", "+46 proyectos / ejecutados" (sin mencionar el Valle) y "Alcance hacia / las 4 regiones del Ecuador" (la bandera de Ecuador va al final de la barra superior, junto a WhatsApp y llamadas). En "Quiénes somos" las cifras van a la derecha: "Brindando soluciones desde 2020", "Proyectos ejecutados +46".
 - Pagos: tarjetas con Datafast y pagos con Deuna; solo se mencionan una vez, en el pie (una sola línea: logo, "Aceptamos" + insignias, copyright), con insignias en escala de grises (Deuna, Datafast, Visa, Mastercard, Amex, Diners).
