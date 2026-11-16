@@ -39,16 +39,21 @@
   const renders = [
     ['render-02', 'Render de fachada frontal de vivienda de tres pisos'], ['render-01', 'Render de cocina, comedor y sala'],
     ['render-04', 'Render de dormitorio con ventanal'], ['render-08', 'Render de cocina con ventana al jardín'],
-    ['render-03', 'Render de fachada frontal desde la vía'], ['render-05', 'Render de dormitorio master con closet'],
+    ['render-03', 'Render de fachada frontal desde la vía'], ['render-13', 'Render de planta general amoblada de una vivienda'],
+    ['render-05', 'Render de dormitorio master con closet'],
     ['render-09', 'Render de comedor y cocina con isla'], ['render-11', 'Render de fachada con vista lateral'],
     ['render-06', 'Render de dormitorio con closet y baño'], ['render-10', 'Render de sala y comedor con chimenea'],
     ['render-12', 'Render de sala, comedor y cocina abiertos']
   ];
   const works = [
-    ['obra-09', 'Losa y columnas con vista al valle'], ['obra-18', 'Estación total en un terreno con pasto'], ['obra-08'],
-    ['obra-27', 'Equipo realizando un estudio de suelos en un terreno'], ['obra-26', 'Vivienda en obra gris con escalera exterior'],
-    ['obra-11'], ['obra-20', 'Antena GPS topográfica junto a una vivienda'], ['obra-21'], ['obra-23'], ['obra-22'], ['obra-24']
+    ['obra-32', 'Obreros fundiendo una losa alivianada con bomba de hormigón'], ['obra-18', 'Estación total en un terreno con pasto'],
+    ['obra-29', 'Mampostería de bloque en una vivienda en construcción'], ['obra-08'],
+    ['obra-27', 'Equipo realizando un estudio de suelos en un terreno'], ['obra-31', 'Losa con bloques y armadura lista para fundir'],
+    ['obra-26', 'Vivienda en obra gris con escalera exterior'], ['obra-22'],
+    ['obra-20', 'Antena GPS topográfica junto a una vivienda'], ['obra-33', 'Losa recién fundida en una obra'],
+    ['obra-09', 'Losa y columnas con vista al valle'], ['obra-30', 'Armadura de vigas sobre el encofrado de una losa']
   ];
+  if (renders.length !== works.length) console.warn('La cinta debe tener el mismo número de renders y obras');
   const gallery = renders.flatMap((r, i) => [r, works[i]]).filter(Boolean);
   const track = document.getElementById('ribbon');
   const imgs = gallery.map(([f, alt]) =>
@@ -59,7 +64,7 @@
   const partners = [
     ['novopan', 'Novopan'], ['novacero', 'Novacero'], ['selvalegre', 'Cemento Selvalegre'], ['conservelco', 'Conservelco'],
     ['intaco', 'Intaco'], ['ecuaceramica', 'Ecuacerámica'], ['sherwin-williams', 'Sherwin-Williams'], ['wavin', 'Wavin'],
-    ['fv', 'FV Área Andina'], ['electrocables', 'Electrocables'], ['graiman', 'Graiman'], ['veto', 'Veto'], ['schneider', 'Schneider Electric']
+    ['fv', 'FV Área Andina'], ['electrocables', 'Electrocables'], ['graiman', 'Graiman'], ['veto', 'Veto'], ['schneider', 'Schneider Electric'], ['holcim', 'Holcim']
   ];
   const logos = partners.map(([f, name]) =>
     `<span class="logo-tile"><img src="assets/partners/${f}.png" alt="${name}" loading="lazy" height="56"></span>`).join('');

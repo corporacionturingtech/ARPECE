@@ -24,9 +24,9 @@ index.html     página única (hero, cifras, servicios, nosotros, trabajo, conta
 styles.css     tokens en :root (paleta ink/paper/accent amarillo), responsive a 900 y 720 px
 script.js      hero con diapositivas, cinta de fotos, menú móvil, formulario → WhatsApp
 assets/logo/   horizontal/vertical, versión dark y light (PNG transparente)
-assets/photos/ obra-NN.jpg (01..28, sin 01, 02, 05, 06, 10, 15, 19, 25: retiradas a pedido) y render-01..12.jpg (1600 px máx.)
+assets/photos/ obra-NN.jpg (03..33, sin 05, 06, 10, 15, 19, 25: retiradas a pedido; 01 y 02 también) y render-01..13.jpg. Hero y "Quiénes somos": 1600 px; las de la cinta: 1280 px, calidad 80
 assets/partners/ logos de proveedores (originales, a color)
-img/, Renders/, Renders.zip  material original del cliente (HEIC, PNG, ZIP, .ai, manual de marca). No publicar.
+img/, Renders/, OneDrive_*/ y sus .zip  material original del cliente (HEIC, PNG, ZIP, .ai, manual de marca). No publicar.
 *.docx, *.vtt  documento de observaciones y transcripciones de reuniones. No publicar.
 .claude/launch.json   servidor de preview: python -m http.server 8080
 ```
@@ -35,7 +35,7 @@ img/, Renders/, Renders.zip  material original del cliente (HEIC, PNG, ZIP, .ai,
 - Idioma del sitio: español de Ecuador. Código y archivos en inglés.
 - Mobile-first; probar a 375, 768 y escritorio.
 - Contacto y precios se escriben en `index.html`; si se repiten, cambiarlos en todos los sitios (WhatsApp también está en `script.js`, constante `WA`).
-- Las fotos nuevas: convertir HEIC a JPG (Python con `pillow` y `pillow-heif`), máx. 1600 px, calidad ~82, y añadir `alt` en `script.js` si no es una foto genérica de obra.
+- Las fotos nuevas: convertir HEIC a JPG (Python con `pillow` y `pillow-heif`), máx. 1280 px para la cinta (1600 px si van al hero), calidad 80, progresivo, y añadir `alt` en `script.js` si no es una foto genérica de obra.
 - Accesibilidad: contraste AA, `alt`, foco visible, `prefers-reduced-motion` respetado.
 - Un CTA primario por sección (WhatsApp). El formulario no tiene backend: arma un mensaje y abre WhatsApp.
 - Íconos monocromos (sprite SVG al inicio de `index.html`); el botón flotante de WhatsApp va en gris oscuro, no en verde. Los logos de proveedores sí van a color.
@@ -43,7 +43,7 @@ img/, Renders/, Renders.zip  material original del cliente (HEIC, PNG, ZIP, .ai,
 
 ## Pendiente / por confirmar con el cliente
 - Paleta y tipografía aprobadas por el cliente en la reunión del 10/11/2026. El manual pide Neusharp y Nexa (de pago); se mantiene Barlow hasta tener los archivos web. El amarillo `#f2b705` no está en el manual pero no se objetó.
-- Proveedores: hay más marcas sin tachar en las hojas escaneadas del documento (Acesco, Adelca, Holcim, Sika, UCEM, etc.); faltan sus logos en buena resolución. El de Wavin es pequeño (39 px de alto).
+- Proveedores: Holcim agregado (logo enviado el 16/11/2026). Hay más marcas sin tachar en las hojas escaneadas del documento (Acesco, Adelca, Sika, UCEM, etc.); faltan sus logos en buena resolución. El de Wavin es pequeño (39 px de alto).
 - Byron puede enviar más fotos de obra y renders; evitar repetirlas en portada y cinta.
 - Tercera y última reunión de ajustes; entregar con dominio y correo configurados.
 - Confirmar con el cliente: el documento de observaciones pedía cerramiento 80, pérgola 70, teja 60 y una cifra "Alcance hacia las 4 regiones del Ecuador"; en la reunión dijo otra cosa. Precios según la reunión; la tercera cifra quedó como "Alcance hacia las 4 regiones del Ecuador".
