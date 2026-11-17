@@ -50,7 +50,7 @@ _seo/          robots.txt y sitemap.xml listos pero SIN publicar (el SEO se cobr
 - Proveedores: Holcim, Plastigama y Rival Tubos agregados (logos enviados en 11/2026). Hay más marcas sin tachar en las hojas escaneadas del documento (Acesco, Adelca, Sika, UCEM, etc.); faltan sus logos en buena resolución. El de Wavin es pequeño (39 px de alto).
 - Byron puede enviar más fotos de obra y renders; evitar repetirlas en portada y cinta.
 - Tercera y última reunión de ajustes; entregar con dominio y correo configurados.
-- SEO: servicio aparte, aún no contratado. Al contratarlo: mover `_seo/robots.txt` y `_seo/sitemap.xml` a la raíz (actualizar `lastmod`), descomentar el bloque SEO del `<head>` de `index.html`, dar de alta el dominio en Google Search Console, enviar el sitemap y enlazar la web desde la ficha de Google Maps. Google ya indexa la página por sí solo (comprobado el 17/11/2026).
+- SEO: servicio aparte (propuesta completa enviada, incluye Google Analytics, 420 USD), aún no aprobado. Mientras tanto la página lleva `<meta name="robots" content="noindex, nofollow">` para que no esté indexada. Al aprobarlo: quitar esa meta, mover `_seo/robots.txt` y `_seo/sitemap.xml` a la raíz (actualizar `lastmod`), descomentar el bloque SEO del `<head>` de `index.html`, dar de alta el dominio en Google Search Console, enviar el sitemap y enlazar la web desde la ficha de Google Maps. Google la había indexado sola antes del noindex (17/11/2026); tarda unos días en retirarla.
 
 ## Preview
 `mcp preview_start` con la config "web", o `python -m http.server 8080` en esta carpeta.
