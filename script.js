@@ -64,7 +64,7 @@
   const partners = [
     ['novopan', 'Novopan'], ['novacero', 'Novacero'], ['selvalegre', 'Cemento Selvalegre'], ['conservelco', 'Conservelco'],
     ['intaco', 'Intaco'], ['ecuaceramica', 'Ecuacerámica'], ['sherwin-williams', 'Sherwin-Williams'], ['wavin', 'Wavin'],
-    ['fv', 'FV Área Andina'], ['electrocables', 'Electrocables'], ['graiman', 'Graiman'], ['veto', 'Veto'], ['schneider', 'Schneider Electric'], ['holcim', 'Holcim']
+    ['fv', 'FV Área Andina'], ['electrocables', 'Electrocables'], ['graiman', 'Graiman'], ['veto', 'Veto'], ['schneider', 'Schneider Electric'], ['holcim', 'Holcim'], ['plastigama', 'Plastigama']
   ];
   const logos = partners.map(([f, name]) =>
     `<span class="logo-tile"><img src="assets/partners/${f}.png" alt="${name}" loading="lazy" height="56"></span>`).join('');

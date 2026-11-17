@@ -43,7 +43,7 @@ img/, Renders/, OneDrive_*/ y sus .zip  material original del cliente (HEIC, PNG
 
 ## Pendiente / por confirmar con el cliente
 - Paleta y tipografía aprobadas por el cliente en la reunión del 10/11/2026. El manual pide Neusharp y Nexa (de pago); se mantiene Barlow hasta tener los archivos web. El amarillo `#f2b705` no está en el manual pero no se objetó.
-- Proveedores: Holcim agregado (logo enviado el 16/11/2026). Hay más marcas sin tachar en las hojas escaneadas del documento (Acesco, Adelca, Sika, UCEM, etc.); faltan sus logos en buena resolución. El de Wavin es pequeño (39 px de alto).
+- Proveedores: Holcim y Plastigama agregados (logos enviados en 11/2026). Hay más marcas sin tachar en las hojas escaneadas del documento (Acesco, Adelca, Sika, UCEM, etc.); faltan sus logos en buena resolución. El de Wavin es pequeño (39 px de alto).
 - Byron puede enviar más fotos de obra y renders; evitar repetirlas en portada y cinta.
 - Tercera y última reunión de ajustes; entregar con dominio y correo configurados.
 - Confirmar con el cliente: el documento de observaciones pedía cerramiento 80, pérgola 70, teja 60 y una cifra "Alcance hacia las 4 regiones del Ecuador"; en la reunión dijo otra cosa. Precios según la reunión; la tercera cifra quedó como "Alcance hacia las 4 regiones del Ecuador".
