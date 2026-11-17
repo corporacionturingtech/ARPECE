@@ -28,7 +28,8 @@ assets/photos/ obra-NN.jpg (03..33, sin 05, 06, 10, 15, 19, 25: retiradas a pedi
 assets/partners/ logos de proveedores (originales, a color)
 img/, Renders/, OneDrive_*/ y sus .zip  material original del cliente (HEIC, PNG, ZIP, .ai, manual de marca). No publicar.
 *.docx, *.vtt  documento de observaciones y transcripciones de reuniones. No publicar.
-robots.txt, sitemap.xml, CNAME  SEO y dominio (GitHub Pages). Al cambiar contenido, actualizar `lastmod` del sitemap.
+CNAME          dominio (GitHub Pages con Jekyll: las carpetas que empiezan por `_` no se publican)
+_seo/          robots.txt y sitemap.xml listos pero SIN publicar (el SEO se cobra aparte)
 .claude/launch.json   servidor de preview: python -m http.server 8080
 ```
 
@@ -49,7 +50,7 @@ robots.txt, sitemap.xml, CNAME  SEO y dominio (GitHub Pages). Al cambiar conteni
 - Proveedores: Holcim, Plastigama y Rival Tubos agregados (logos enviados en 11/2026). Hay más marcas sin tachar en las hojas escaneadas del documento (Acesco, Adelca, Sika, UCEM, etc.); faltan sus logos en buena resolución. El de Wavin es pequeño (39 px de alto).
 - Byron puede enviar más fotos de obra y renders; evitar repetirlas en portada y cinta.
 - Tercera y última reunión de ajustes; entregar con dominio y correo configurados.
-- Google ya indexa `https://arpece.com.ec` (comprobado el 17/11/2026 con `site:arpece.com.ec`). Falta dar de alta el dominio en Google Search Console (requiere la cuenta del cliente o de TuringTech) y enviar el sitemap; también conviene enlazar la web desde la ficha de Google Maps.
+- SEO: servicio aparte, aún no contratado. Al contratarlo: mover `_seo/robots.txt` y `_seo/sitemap.xml` a la raíz (actualizar `lastmod`), descomentar el bloque SEO del `<head>` de `index.html`, dar de alta el dominio en Google Search Console, enviar el sitemap y enlazar la web desde la ficha de Google Maps. Google ya indexa la página por sí solo (comprobado el 17/11/2026).
 
 ## Preview
 `mcp preview_start` con la config "web", o `python -m http.server 8080` en esta carpeta.
