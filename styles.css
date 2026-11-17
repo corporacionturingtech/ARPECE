@@ -40,14 +40,15 @@ h1,h2,h3,h4{font-family:var(--f-head);line-height:1.05;text-transform:uppercase;
 .burger[aria-expanded=true] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
 
 /* hero */
-.hero{position:relative;min-height:min(80vh,680px);color:#fff;background:var(--ink);overflow:hidden;display:grid}
+.hero{position:relative;min-height:clamp(560px,80vh,720px);color:#fff;background:var(--ink);overflow:hidden;display:grid}
 .hero__slides{position:absolute;inset:0}
-.slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;
-  padding:0 max(16px,calc((100% - var(--wrap))/2)) 70px;opacity:0;visibility:hidden;transition:opacity .9s,visibility .9s;
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;
+  /* el texto se apoya sobre los botones: 172px = alto de .hero__cta (botón + 84px) + aire */
+  padding:40px max(16px,calc((100% - var(--wrap))/2)) 172px;opacity:0;visibility:hidden;transition:opacity .9s,visibility .9s;
   background:linear-gradient(90deg,rgba(25,22,18,.85) 0%,rgba(25,22,18,.45) 60%,rgba(25,22,18,.25) 100%),var(--img) center/cover}
 .slide.is-active{opacity:1;visibility:visible}
 .slide .eyebrow{font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-size:15px;margin-bottom:10px}
-.slide h1,.slide h2{font-size:clamp(46px,8vw,96px);max-width:12ch}
+.slide h1,.slide h2{font-size:clamp(40px,min(8vw,11vh),96px);max-width:12ch}
 .slide p:last-child{font-size:clamp(18px,2.2vw,24px);margin-top:14px;max-width:34ch}
 .slide strong{color:var(--accent)}
 .slide.is-active h1,.slide.is-active h2{animation:rise .8s .1s both}
@@ -170,8 +171,8 @@ h1,h2,h3,h4{font-family:var(--f-head);line-height:1.05;text-transform:uppercase;
   .ribbon img{height:240px}
   .ribbon .logo-tile img{height:44px}
   .logo-tile{height:68px}
-  .hero{min-height:600px}
-  .slide{padding-bottom:150px}
+  .hero{min-height:620px}
+  .slide{padding-bottom:214px} /* en móvil los botones van en dos filas */
   .hero__cta{padding-bottom:70px}
   .mv{grid-template-columns:1fr}
   .footer{padding-bottom:88px}

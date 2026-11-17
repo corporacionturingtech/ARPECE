@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arpece.com.ec/sitemap.xml

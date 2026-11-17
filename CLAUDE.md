@@ -28,6 +28,7 @@ assets/photos/ obra-NN.jpg (03..33, sin 05, 06, 10, 15, 19, 25: retiradas a pedi
 assets/partners/ logos de proveedores (originales, a color)
 img/, Renders/, OneDrive_*/ y sus .zip  material original del cliente (HEIC, PNG, ZIP, .ai, manual de marca). No publicar.
 *.docx, *.vtt  documento de observaciones y transcripciones de reuniones. No publicar.
+robots.txt, sitemap.xml, CNAME  SEO y dominio (GitHub Pages). Al cambiar contenido, actualizar `lastmod` del sitemap.
 .claude/launch.json   servidor de preview: python -m http.server 8080
 ```
 
@@ -36,6 +37,8 @@ img/, Renders/, OneDrive_*/ y sus .zip  material original del cliente (HEIC, PNG
 - Mobile-first; probar a 375, 768 y escritorio.
 - Contacto y precios se escriben en `index.html`; si se repiten, cambiarlos en todos los sitios (WhatsApp también está en `script.js`, constante `WA`).
 - Las fotos nuevas: convertir HEIC a JPG (Python con `pillow` y `pillow-heif`), máx. 1280 px para la cinta (1600 px si van al hero), calidad 80, progresivo, y añadir `alt` en `script.js` si no es una foto genérica de obra.
+- CSS y JS se enlazan con `?v=AAAAMMDD`: cambiar la fecha en `index.html` en cada publicación con cambios de estilo o script, para que los navegadores no muestren la versión vieja.
+- Hero: el texto de cada diapositiva se apoya sobre los botones (`.slide` con `justify-content:flex-end` y `padding-bottom` reservado); probar también laptops bajas (1366×640) para que no se crucen.
 - Accesibilidad: contraste AA, `alt`, foco visible, `prefers-reduced-motion` respetado.
 - Un CTA primario por sección (WhatsApp). El formulario no tiene backend: arma un mensaje y abre WhatsApp.
 - Íconos monocromos (sprite SVG al inicio de `index.html`); el botón flotante de WhatsApp va en gris oscuro, no en verde. Los logos de proveedores sí van a color.
@@ -46,6 +49,7 @@ img/, Renders/, OneDrive_*/ y sus .zip  material original del cliente (HEIC, PNG
 - Proveedores: Holcim, Plastigama y Rival Tubos agregados (logos enviados en 11/2026). Hay más marcas sin tachar en las hojas escaneadas del documento (Acesco, Adelca, Sika, UCEM, etc.); faltan sus logos en buena resolución. El de Wavin es pequeño (39 px de alto).
 - Byron puede enviar más fotos de obra y renders; evitar repetirlas en portada y cinta.
 - Tercera y última reunión de ajustes; entregar con dominio y correo configurados.
+- Google ya indexa `https://arpece.com.ec` (comprobado el 17/11/2026 con `site:arpece.com.ec`). Falta dar de alta el dominio en Google Search Console (requiere la cuenta del cliente o de TuringTech) y enviar el sitemap; también conviene enlazar la web desde la ficha de Google Maps.
 
 ## Preview
 `mcp preview_start` con la config "web", o `python -m http.server 8080` en esta carpeta.
